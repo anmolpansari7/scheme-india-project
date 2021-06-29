@@ -1,0 +1,2 @@
+# scheme-india-project
+This project has been build with a vision of providing an easier way to find out the right government scheme for the people of India. In this web application, users can see all the government schemes and by using our filter they can find out the right scheme that fulfill there demands. This application is build  using Next JS. It has two sides one for user and another one for the admin. Admin have the responsibility of adding the new schemes launched by the government of India.
