@@ -4,18 +4,15 @@ import Router from "next/router";
 import NProgress from "nprogress";
 
 function MyApp({ Component, pageProps }) {
-  Router.events.on("routeChangeStart", (url) => {
-    console.log("Route is Changing.");
+  Router.events.on("routeChangeStart", () => {
     NProgress.start();
   });
 
-  Router.events.on("routeChangeComplete", (url) => {
-    console.log("Route is Changing is Complete.");
+  Router.events.on("routeChangeComplete", () => {
     NProgress.done();
   });
 
-  Router.events.on("routeChangeError", (url) => {
-    console.log("There was an error");
+  Router.events.on("routeChangeError", () => {
     NProgress.done();
   });
 

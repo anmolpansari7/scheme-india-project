@@ -17,9 +17,7 @@ async function handler(req, res) {
 
     const schemesCollection = db.collection("schemes");
 
-    const result = await schemesCollection.insertOne(data);
-
-    console.log(result);
+    await schemesCollection.insertOne(data);
 
     (await client).close;
 

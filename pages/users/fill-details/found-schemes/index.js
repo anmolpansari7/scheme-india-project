@@ -25,7 +25,10 @@ const FoundSchemesPage = (props) => {
         <div className={styles.scheme_card_list}>
           {props.schemes.map((scheme) => {
             return (
-              <Link href={`/users/fill-details/found-schemes/${scheme.id}`}>
+              <Link
+                href={`/users/fill-details/found-schemes/${scheme.id}`}
+                key={scheme.id}
+              >
                 <a>
                   <Card
                     image={schoolBoy}

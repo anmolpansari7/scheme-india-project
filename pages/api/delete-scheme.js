@@ -23,8 +23,6 @@ async function handler(req, res) {
       _id: ObjectId(schemeId),
     });
 
-    console.log(result);
-
     (await client).close;
 
     res.status(201).json({ message: "Schemes deleted" });

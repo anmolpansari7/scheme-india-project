@@ -69,8 +69,6 @@ export async function getStaticProps() {
 
   const schemes = await schemesCollection.find({}, { type: 1 }).toArray();
 
-  // console.log(schemes);
-
   (await client).close;
 
   schemes.forEach((scheme) => {

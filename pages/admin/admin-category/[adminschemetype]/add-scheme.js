@@ -28,8 +28,6 @@ const AddSchemePage = () => {
       },
     });
 
-    const data = await response.json();
-    console.log(data);
     setAddingStage(false);
     router.push(`/admin/admin-category/${schemeType}`);
   };

@@ -63,8 +63,6 @@ const AdminSchemeType = (props) => {
       },
     });
 
-    const data = await response.json();
-    console.log(data);
     const after_delete = shownData.filter(
       (scheme) => scheme.id !== deletingSchemeId
     );

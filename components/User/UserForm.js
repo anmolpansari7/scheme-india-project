@@ -40,7 +40,6 @@ const UserForm = () => {
       scheme: scheme,
     };
     router.push("/users/fill-details/found-schemes");
-    console.log(userDetails);
   };
 
   return (
