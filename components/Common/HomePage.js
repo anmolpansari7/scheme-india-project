@@ -21,10 +21,10 @@ const HomePage = () => {
   return (
     <main className={styles.home_outer_container}>
       <div className={styles.home_left_content}>
-        <Image src={FrontPic} />
+        <Image src={FrontPic} alt="Home page display picture." />
       </div>
       <div className={styles.home_right_content}>
-        <Image src={Logo} height="100" width="100" />
+        <Image src={Logo} alt="Scheme India Logo" height="100" width="100" />
         <div>
           <h1>Finding Right Scheme is now easy.</h1>
           <p>

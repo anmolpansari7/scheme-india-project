@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +33,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+=======
+# scheme-india-project
+This project has been build with a vision of providing an easier way to find out the right government scheme for the people of India. In this web application, users can see all the government schemes and by using our filter they can find out the right scheme that fulfill there demands. This application is build  using Next JS. It has two sides one for user and another one for the admin. Admin have the responsibility of adding the new schemes launched by the government of India.
+>>>>>>> 910e40896749cacdb478c02b85df6eb804346391

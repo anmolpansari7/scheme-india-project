@@ -6,7 +6,7 @@ import nextBtn from "./../../../Images/nextBtn.svg";
 import styles from "./../../../styles/userFormPage.module.css";
 import UserForm from "./../../../components/User/UserForm";
 
-const userFormPage = () => {
+const UserFormPage = () => {
   const router = useRouter();
   const previousPageHandler = () => {
     router.back();
@@ -36,4 +36,4 @@ const userFormPage = () => {
   );
 };
 
-export default userFormPage;
+export default UserFormPage;

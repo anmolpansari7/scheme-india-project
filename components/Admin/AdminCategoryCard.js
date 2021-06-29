@@ -7,7 +7,11 @@ const AdminCategoryCard = (props) => {
       className={styles.admin_card}
       style={{ backgroundColor: `${props.color}` }}
     >
-      <Image src={props.image} layout="responsive" />
+      <Image
+        src={props.image}
+        layout="responsive"
+        alt="Admin Category card image."
+      />
       <div className={styles.admin_card_bottom}>
         <h3>{props.heading}</h3>
         <div className={styles.numbers_detail}>

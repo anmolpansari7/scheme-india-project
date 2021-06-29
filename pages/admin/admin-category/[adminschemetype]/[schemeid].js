@@ -2,7 +2,7 @@ import { MongoClient, ObjectId } from "mongodb";
 import Head from "next/head";
 import SchemeDetails from "../../../../components/Common/SchemeDetails";
 
-const showSchemeDetails = (props) => {
+const ShowSchemeDetails = (props) => {
   return (
     <>
       <Head>
@@ -78,4 +78,4 @@ export async function getStaticProps(context) {
     revalidate: 1,
   };
 }
-export default showSchemeDetails;
+export default ShowSchemeDetails;

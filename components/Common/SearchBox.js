@@ -12,7 +12,7 @@ const SearchBox = (props) => {
           placeholder="Search"
           onChange={props.onChange}
         />
-        <Image src={searchIcon} />
+        <Image src={searchIcon} alt="magnifying search icon" />
       </form>
     </div>
   );

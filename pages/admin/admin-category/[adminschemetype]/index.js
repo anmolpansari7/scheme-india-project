@@ -10,7 +10,7 @@ import ConfirmModal from "../../../../components/Layout/ConfirmModal";
 import styles from "./../../../../styles/adminSchemeType.module.css";
 import MessageModal from "../../../../components/Layout/MessageModal";
 
-const adminSchemeType = (props) => {
+const AdminSchemeType = (props) => {
   const [shownData, setShownData] = useState([...props.schemes]);
   const [deletePermission, setDeletePermission] = useState(false);
   const [deletingSchemeId, setDeletingSchemeId] = useState("");
@@ -109,7 +109,7 @@ const adminSchemeType = (props) => {
         <div className={styles.admin_scheme_type_top_container}>
           <SearchBox onChange={filterSearchHandler} />
           <button onClick={addButtonHandler}>
-            <Image src={addBtn} />
+            <Image src={addBtn} alt="add scheme button" />
           </button>
         </div>
         <div className={styles.admin_schem_type_card_list}>
@@ -190,4 +190,4 @@ export async function getStaticProps(context) {
     revalidate: 1,
   };
 }
-export default adminSchemeType;
+export default AdminSchemeType;

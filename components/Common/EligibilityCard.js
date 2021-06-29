@@ -14,7 +14,7 @@ const EligibilityCard = (props) => {
       <div className={styles.eligibility_links}>
         <p>Go to Official Site</p>
         <a target="_blank" href={props.link} rel="noopener noreferrer">
-          <Image src={linkBtn} />
+          <Image src={linkBtn} alt="outgoing additional link button" />
         </a>
       </div>
     </div>

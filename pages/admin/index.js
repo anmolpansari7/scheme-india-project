@@ -20,7 +20,7 @@ const Admin = () => {
       </Head>
       <div className={styles.login_container}>
         <div className={styles.login_head}>
-          <Images src={LoginIllustration} />
+          <Images src={LoginIllustration} alt="login illustration" />
           <h2>Log In</h2>
         </div>
         <form onSubmit={loginFormSubmissionHandler}>

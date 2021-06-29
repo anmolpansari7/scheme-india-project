@@ -7,7 +7,7 @@ const NextButton = (props) => {
       className={`${styles.next_button} ${styles.highlight_btn}`}
       onClick={props.onClick}
     >
-      <Image src={props.image} />
+      <Image src={props.image} alt="previous and next button" />
     </button>
   );
 };

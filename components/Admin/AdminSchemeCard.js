@@ -22,7 +22,7 @@ const AdminSchemeCard = (props) => {
             props.onDeleteButtonPress(props.scheme.id, props.scheme.name);
           }}
         >
-          <Image src={deleteBtn} />
+          <Image src={deleteBtn} alt="delete scheme button" />
         </button>
       </div>
     </div>

@@ -49,7 +49,7 @@ const AddSchemeForm = (props) => {
         />
       </div>
       <button type="submit" className={styles.add_btn}>
-        <Image src={addBtn} />
+        <Image src={addBtn} alt="add scheme button" />
       </button>
     </form>
   );

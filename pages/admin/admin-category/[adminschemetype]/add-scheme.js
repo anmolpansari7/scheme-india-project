@@ -5,7 +5,7 @@ import AddSchemeForm from "../../../../components/Admin/AddSchemeForm";
 import styles from "./../../../../styles/addSchemePage.module.css";
 import MessageModal from "../../../../components/Layout/MessageModal";
 
-const addSchemePage = () => {
+const AddSchemePage = () => {
   const [addingStage, setAddingStage] = useState(false);
   const router = useRouter();
   const schemeType = router.query.adminschemetype;
@@ -55,4 +55,4 @@ const addSchemePage = () => {
   );
 };
 
-export default addSchemePage;
+export default AddSchemePage;
