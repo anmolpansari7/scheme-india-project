@@ -1,0 +1,13 @@
+.user_form_page {
+  height: 100%;
+  width: 90%;
+  /* background: cornflowerblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.user_form_page button img {
+  max-height: 70px;
+}

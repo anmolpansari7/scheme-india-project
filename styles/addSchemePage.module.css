@@ -1,0 +1,27 @@
+.add_scheme_page {
+  height: 100%;
+  width: 100%;
+  /* background-color: hotpink; */
+  padding: 50px;
+}
+
+.go_back,
+.log_out {
+  position: absolute;
+  top: 25px;
+  right: 15%;
+
+  font-family: "Merienda", cursive;
+  font-size: 1rem;
+  color: #fff;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.log_out {
+  right: 5%;
+}

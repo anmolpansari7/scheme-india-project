@@ -2,6 +2,17 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../Images/tricolor-background.svg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +24,64 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  font-family: "Merienda", cursive;
+  color: #1f0062;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-family: "Fredoka One", cursive;
+  color: #1f0062;
+  font-size: 3.2rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Aclonica", sans-serif;
+}
+
+h2 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 2.2rem;
+  color: #00364e;
+}
+
+input,
+select,
+textarea {
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+  color: #1f0062;
+}
+
+/* font-family: 'Aclonica', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Merienda', cursive; */
+
+#nprogress .bar {
+  height: 6px;
+}
+
+#nprogress .bar {
+  background: rgb(70, 67, 255);
+}
+
+#nprogress .spinner-icon {
+  border-top: 3px solid;
+  border-left: 3px solid;
+  border-top-color: rgb(255, 138, 5);
+  border-left-color: rgb(2, 148, 9);
+
+  height: 70px;
+  width: 70px;
+
+  position: fixed;
+  top: 45%;
+  left: 50%;
+
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }

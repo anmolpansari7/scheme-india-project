@@ -1,0 +1,43 @@
+.scheme_details_page {
+  height: 100%;
+  width: 95%;
+  /* background-color: cadetblue; */
+  padding: 50px 20px 50px 0;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.left_content {
+  height: 100%;
+  width: 70%;
+  padding: 0px 50px 20px 40px;
+  /* background-color: darkgray; */
+  overflow-y: scroll;
+}
+
+.right_card {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: darkseagreen; */
+}
+
+.scheme_details_page hr {
+  background-color: #00364e;
+  height: 4px;
+  margin-top: -15px;
+}
+
+.scheme_details_page p {
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+  color: #00364e;
+  text-align: justify;
+}
+
+.scheme_details_page img {
+  max-height: 70px;
+}

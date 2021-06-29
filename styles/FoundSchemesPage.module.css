@@ -1,0 +1,40 @@
+.found_schemes_page {
+  /* background-color: cadetblue; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 50px 50px 50px;
+}
+
+.right_side {
+  /* background-color: cyan; */
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_side p {
+  margin-top: 45px;
+}
+
+.scheme_card_list {
+  padding-top: 30px;
+  width: 90%;
+  /* background-color: cornflowerblue; */
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.found_schemes_page img {
+  max-height: 70px;
+}

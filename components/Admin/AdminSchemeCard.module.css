@@ -1,0 +1,61 @@
+.admin_scheme_card {
+  /* background-color: rosybrown; */
+  margin: 25px;
+}
+
+.admin_scheme_card_top {
+  max-width: 250px;
+  min-height: 200px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: darkkhaki; */
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+
+  background: #fff1e0;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.admin_scheme_card_top:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.admin_scheme_card h2 {
+  font-size: 1.3rem;
+  color: #1f0062;
+}
+
+.admin_scheme_card p {
+  font-size: 1rem;
+  color: #1f0062;
+}
+
+.delete_button {
+  /* background-color: cadetblue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete_button button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+  position: relative;
+  bottom: 20px;
+
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}

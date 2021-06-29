@@ -1,0 +1,25 @@
+.next_button {
+  height: 30%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.highlight_btn {
+  animation: highlight 2s infinite;
+}
+
+@keyframes highlight {
+  0% {
+    tranfrom: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

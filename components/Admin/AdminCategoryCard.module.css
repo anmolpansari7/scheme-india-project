@@ -1,0 +1,48 @@
+.admin_card {
+  max-width: 300px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 5px solid #fff;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.admin_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.admin_card_top {
+  max-height: 65%;
+  /* background-color: rgb(196, 5, 62); */
+}
+
+.admin_card_bottom {
+  width: 100%;
+  padding: 20px 10px 20px 10px;
+  /* background-color: cornflowerblue; */
+}
+
+.admin_card h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.admin_card p {
+  color: #fff;
+}
+
+.total_schemes {
+  margin-left: 20px;
+}
+
+.numbers_detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+.show_all_scheme_page {
+  height: 100%;
+  width: 100%;
+  /* background-color: lightcoral; */
+  padding: 30px 70px 30px 70px;
+}
+
+.top_container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: lightseagreen; */
+  margin-bottom: 20px;
+}
+
+.top_container button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+  color: #1f0062;
+  font-size: 1.2rem;
+  font-family: "Merienda", cursive;
+}
+
+.scheme_card_list {
+  height: 90%;
+  /* background-color: palegreen; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}

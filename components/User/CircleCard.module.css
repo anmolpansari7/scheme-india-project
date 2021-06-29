@@ -1,0 +1,21 @@
+.circle_container {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #fff;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  transform: scale(0.8);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.circle_container:hover {
+  border: 10px solid #1f0062;
+  cursor: pointer;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+}

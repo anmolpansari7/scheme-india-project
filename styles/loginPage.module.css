@@ -1,0 +1,91 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_container {
+  width: 570px;
+  height: 400px;
+  padding: 30px 50px 20px 50px;
+
+  background: #ffe9bf;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+}
+
+.login_head {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+.login_head h2 {
+  color: #ff9933;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.login_container form {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login_container form div {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_container form input {
+  width: 100%;
+  border-style: hidden;
+  min-height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 29px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  color: #ff9933;
+}
+
+.login_container form input:focus {
+  outline: none;
+}
+
+.login_container form label {
+  font-family: "Merienda", cursive;
+  margin-left: 20px;
+  color: #ff9933;
+}
+
+.login_container form button {
+  width: 180px;
+  height: 50px;
+  background: #ff9933;
+  border-radius: 29px;
+
+  border: none;
+  overflow: hidden;
+  outline: none;
+
+  font-family: "Merienda", cursive;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.login_container form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
