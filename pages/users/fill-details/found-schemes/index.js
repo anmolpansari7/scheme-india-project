@@ -76,7 +76,7 @@ export async function getStaticProps() {
         id: scheme._id.toString(),
       })),
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 }
 

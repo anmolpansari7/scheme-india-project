@@ -1,12 +1,10 @@
 import { MongoClient } from "mongodb";
 import authenticated from "./middleware/authenticated";
 
-// /api/new-scheme
-// POST /api/new-scheme
+const getSchemesTypeHandler = async (req, res) => {
+  const { adminschemetype } = req.query;
 
-async function newSchemeHandler(req, res) {
-  if (req.method === "POST") {
-    const data = req.body;
+  if (req.method === "GET") {
     const userPassword = process.env.MONGODB_PASSWORD;
 
     const client = new MongoClient(
@@ -18,12 +16,16 @@ async function newSchemeHandler(req, res) {
 
     const schemesCollection = db.collection("schemes");
 
-    await schemesCollection.insertOne(data);
+    const schemes = await schemesCollection
+      .find({ type: adminschemetype })
+      .toArray();
 
     (await client).close;
 
-    res.status(201).json({ message: "Schemes inserted" });
+    res.json({ message: schemes });
+  } else {
+    res.status(405).json({ message: "We only accept get method." });
   }
-}
+};
 
-export default authenticated(newSchemeHandler);
+export default authenticated(getSchemesTypeHandler);

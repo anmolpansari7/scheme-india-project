@@ -1,4 +1,3 @@
-import { MongoClient } from "mongodb";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -9,6 +8,7 @@ import AdminSchemeCard from "../../../../components/Admin/AdminSchemeCard";
 import ConfirmModal from "../../../../components/Layout/ConfirmModal";
 import styles from "./../../../../styles/adminSchemeType.module.css";
 import MessageModal from "../../../../components/Layout/MessageModal";
+import myGet from "../../../api/myGet";
 
 const AdminSchemeType = (props) => {
   const [shownData, setShownData] = useState([...props.schemes]);
@@ -43,6 +43,7 @@ const AdminSchemeType = (props) => {
       }
     });
 
+    router.reload();
     setShownData(searchFilters);
   };
 
@@ -63,13 +64,13 @@ const AdminSchemeType = (props) => {
       },
     });
 
-    const after_delete = shownData.filter(
-      (scheme) => scheme.id !== deletingSchemeId
-    );
-    setShownData(after_delete);
+    const data = await response.json();
+
     await setDeletingSchemeId("");
     await setDeletingSchemeName("");
     await setDeletingStage(false);
+
+    router.reload();
   };
 
   const cancelDeletion = () => {
@@ -130,48 +131,14 @@ const AdminSchemeType = (props) => {
   );
 };
 
-export async function getStaticPaths() {
-  return {
-    fallback: false,
-    paths: [
-      {
-        params: {
-          adminschemetype: "health",
-        },
-      },
-      {
-        params: {
-          adminschemetype: "education",
-        },
-      },
-      {
-        params: {
-          adminschemetype: "startup",
-        },
-      },
-    ],
-  };
-}
-
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const schemeTypeName = context.params.adminschemetype;
+  const json = await myGet(
+    `http://localhost:3000/api/admin-scheme-type?adminschemetype=${schemeTypeName}`,
+    context
+  );
 
-  const userPassword = process.env.MONGODB_PASSWORD;
-
-  const client = new MongoClient(
-    `mongodb+srv://anmol-pansari_7:${userPassword}@scheme-india-cluster.yvivi.mongodb.net/schemes?retryWrites=true&w=majority`,
-    { useUnifiedTopology: true }
-  ).connect();
-
-  const db = (await client).db();
-
-  const schemesCollection = db.collection("schemes");
-
-  const schemes = await schemesCollection
-    .find({ type: schemeTypeName })
-    .toArray();
-
-  (await client).close;
+  const schemes = await json.message;
 
   return {
     props: {
@@ -185,7 +152,7 @@ export async function getStaticProps(context) {
         id: scheme._id.toString(),
       })),
     },
-    revalidate: 1,
   };
 }
+
 export default AdminSchemeType;

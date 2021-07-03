@@ -75,7 +75,7 @@ export async function getStaticProps(context) {
         id: selectedScheme._id.toString(),
       },
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 }
 export default ShowSchemeDetails;

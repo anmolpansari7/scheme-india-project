@@ -1,5 +1,3 @@
-import { MongoClient } from "mongodb";
-
 import Link from "next/link";
 import Head from "next/head";
 import styles from "./../../../styles/adminCategory.module.css";
@@ -7,6 +5,7 @@ import AdminCategoryCard from "./../../../components/Admin/AdminCategoryCard";
 import healthDisplay from "./../../../Images/health_display.png";
 import educationDisplay from "./../../../Images/education_display.png";
 import startupDisplay from "./../../../Images/startup_display.png";
+import myGet from "../../api/myGet";
 
 const AdminCategory = (props) => {
   return (
@@ -51,25 +50,14 @@ const AdminCategory = (props) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
+  const json = await myGet("http://localhost:3000/api/get-schemes", context);
+
   let numberOfHealthSchemes = 0;
   let numberOfEducationSchemes = 0;
   let numberOfStartupSchemes = 0;
 
-  const userPassword = process.env.MONGODB_PASSWORD;
-
-  const client = new MongoClient(
-    `mongodb+srv://anmol-pansari_7:${userPassword}@scheme-india-cluster.yvivi.mongodb.net/schemes?retryWrites=true&w=majority`,
-    { useUnifiedTopology: true }
-  ).connect();
-
-  const db = (await client).db();
-
-  const schemesCollection = db.collection("schemes");
-
-  const schemes = await schemesCollection.find({}, { type: 1 }).toArray();
-
-  (await client).close;
+  const schemes = await json.message;
 
   schemes.forEach((scheme) => {
     if (scheme.type === "health") {
@@ -87,7 +75,6 @@ export async function getStaticProps() {
       numberOfEducationSchemes: numberOfEducationSchemes,
       numberOfStartupSchemes: numberOfStartupSchemes,
     },
-    revalidate: 1,
   };
 }
 

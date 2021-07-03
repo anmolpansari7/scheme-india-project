@@ -1,9 +1,10 @@
 import { MongoClient, ObjectId } from "mongodb";
+import authenticated from "./middleware/authenticated";
 
 // /api/delete-scheme
 // POST /api/delete-scheme
 
-async function handler(req, res) {
+async function deleteSchemeHandler(req, res) {
   if (req.method === "DELETE") {
     const data = req.body;
     const schemeId = data.id;
@@ -25,8 +26,10 @@ async function handler(req, res) {
 
     (await client).close;
 
-    res.status(201).json({ message: "Schemes deleted" });
+    res.status(201).json({ message: result });
+  } else {
+    res.status(405).json({ message: "We receive only delete request." });
   }
 }
 
-export default handler;
+export default authenticated(deleteSchemeHandler);
