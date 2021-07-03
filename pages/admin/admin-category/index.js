@@ -52,7 +52,7 @@ const AdminCategory = (props) => {
 
 export async function getServerSideProps(context) {
   const json = await myGet(
-    "https://scheme-india-project.vercel.app/get-schemes",
+    "https://scheme-india-project.vercel.app/api/get-schemes",
     context
   );
 
