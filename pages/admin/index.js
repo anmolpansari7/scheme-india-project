@@ -33,10 +33,7 @@ const Admin = () => {
     } else {
       setHeading("Wrong Credentials!");
     }
-    console.log(status);
     const json = await response.json();
-
-    console.log(json);
   };
 
   return (
