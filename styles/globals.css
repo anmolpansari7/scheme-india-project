@@ -85,3 +85,17 @@ font-family: 'Merienda', cursive; */
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
+
+@media only screen and (max-width: 600px) {
+  .mobile_previous_button {
+    left: 25px;
+  }
+
+  .mobile_next_button {
+    right: 25px;
+  }
+
+  .mobile_bottom_center_button {
+    right: 42.5%;
+  }
+}

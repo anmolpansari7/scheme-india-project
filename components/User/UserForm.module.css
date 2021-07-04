@@ -100,7 +100,7 @@
   padding-right: 30px;
 }
 
-.form_content button{
+.form_content button {
   height: 25%;
   width: 2.75%;
   position: absolute;
@@ -110,4 +110,45 @@
   opacity: 0;
   z-index: 100;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .form_content {
+    width: 100%;
+    /* background: rgb(129, 129, 255); */
+  }
+
+  .form_content form {
+    /* background-color: burlywood; */
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .user_form_left {
+    /* background-color: aquamarine; */
+    padding: 0;
+  }
+
+  .user_form_right {
+    /* background-color: rgb(22, 148, 106); */
+    padding: 0px;
+  }
+
+  .field {
+    margin-top: 10px;
+  }
+
+  .field input {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .form_content button {
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    top: unset;
+    bottom: 16px;
+    border-radius: 100%;
+  }
 }

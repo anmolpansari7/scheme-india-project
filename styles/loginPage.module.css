@@ -89,3 +89,30 @@
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    /* background-color: teal; */
+    padding: 20px;
+  }
+
+  .login_container {
+    padding: 30px 20px;
+  }
+
+  .login_container form {
+    height: 85%;
+  }
+
+  .login_container form input {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 5px;
+
+    color: #ff9933;
+  }
+
+  .login_container form input:focus {
+    outline: none;
+  }
+}

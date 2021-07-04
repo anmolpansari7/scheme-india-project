@@ -19,7 +19,11 @@ const FoundSchemesPage = (props) => {
       <Head>
         <title>Scheme India - Found Schemes</title>
       </Head>
-      <NextButton onClick={previousPageHandler} image={previousBtn} />
+      <NextButton
+        onClick={previousPageHandler}
+        image={previousBtn}
+        type="mobile_bottom_center_button"
+      />
       <div className={styles.right_side}>
         <p>We have found following schemes using your details.</p>
         <div className={styles.scheme_card_list}>

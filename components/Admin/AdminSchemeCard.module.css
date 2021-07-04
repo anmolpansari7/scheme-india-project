@@ -59,3 +59,15 @@
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .admin_scheme_card {
+    margin: unset;
+    /* background-color: rosybrown; */
+    min-width: 100%;
+  }
+
+  .admin_scheme_card_top {
+    min-width: 100%;
+  }
+}

@@ -29,9 +29,17 @@ const UserFormPage = () => {
           content="scheme India, government schemes, find government schemes in india"
         />
       </Head>
-      <NextButton onClick={previousPageHandler} image={previousBtn} />
+      <NextButton
+        onClick={previousPageHandler}
+        image={previousBtn}
+        type="mobile_previous_button"
+      />
       <UserForm />
-      <NextButton onClick={nextPageHandler} image={nextBtn} />
+      <NextButton
+        onClick={nextPageHandler}
+        image={nextBtn}
+        type="mobile_next_button"
+      />
     </div>
   );
 };

@@ -38,3 +38,29 @@
 .found_schemes_page img {
   max-height: 70px;
 }
+
+@media only screen and (max-width: 600px) {
+  .found_schemes_page {
+    /* background-color: cadetblue; */
+    padding: 20px;
+  }
+
+  .right_side {
+    /* background-color: cyan; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .right_side p {
+    margin-top: 5px;
+  }
+
+  .scheme_card_list {
+    padding-top: 0px;
+    width: 100%;
+    height: fit-content;
+    overflow-y: unset;
+    display: unset;
+    grid-auto-columns: 1fr;
+  }
+}

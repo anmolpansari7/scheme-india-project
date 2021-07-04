@@ -23,3 +23,18 @@
     transform: scale(1);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .next_button {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .next_button img {
+    height: 40px;
+  }
+}

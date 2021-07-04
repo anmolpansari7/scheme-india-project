@@ -51,10 +51,7 @@ const AdminCategory = (props) => {
 };
 
 export async function getServerSideProps(context) {
-  const json = await myGet(
-    "https://scheme-india-project.vercel.app/api/get-schemes",
-    context
-  );
+  const json = await myGet("http://localhost:3000/api/get-schemes", context);
 
   let numberOfHealthSchemes = 0;
   let numberOfEducationSchemes = 0;

@@ -33,3 +33,28 @@
   overflow: hidden;
   outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .home_outer_container {
+    width: 100%;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .home_right_content {
+    height: 100%;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .home_right_content h1 {
+    text-align: center;
+  }
+
+  .home_right_content p {
+    text-align: center;
+  }
+}

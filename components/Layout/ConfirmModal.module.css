@@ -73,3 +73,15 @@
     opacity: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .confirm_modal {
+    min-width: 80%;
+    padding: 20px;
+    min-height: 220px;
+  }
+
+  .modal_buttons button {
+    width: 120px;
+  }
+}

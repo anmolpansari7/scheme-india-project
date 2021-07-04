@@ -35,3 +35,16 @@
   flex-direction: row-reverse;
   overflow-y: scroll;
 }
+
+@media only screen and (max-width: 600px) {
+  .show_all_scheme_page {
+    /* background-color: lightcoral; */
+    padding: 20px;
+  }
+
+  .top_container {
+    height: 55px;
+    /* background-color: lightseagreen; */
+    margin-bottom: 20px;
+  }
+}

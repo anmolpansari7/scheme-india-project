@@ -12,7 +12,11 @@ const SchemeDetails = (props) => {
 
   return (
     <div className={styles.scheme_details_page}>
-      <NextButton image={previousBtn} onClick={previousPageHandler} />
+      <NextButton
+        image={previousBtn}
+        onClick={previousPageHandler}
+        type="mobile_bottom_center_button"
+      />
       <div className={styles.left_content}>
         <h2>{props.scheme.name}</h2>
         <hr />

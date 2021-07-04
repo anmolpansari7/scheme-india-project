@@ -25,3 +25,21 @@
 .log_out {
   right: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+  .add_scheme_page {
+    height: fit-content;
+    /* background-color: hotpink; */
+    padding: 20px;
+  }
+
+  .go_back,
+  .log_out {
+    color: #1f0062;
+    right: 25%;
+  }
+
+  .log_out {
+    right: 5%;
+  }
+}

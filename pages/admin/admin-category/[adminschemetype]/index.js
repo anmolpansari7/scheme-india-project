@@ -134,7 +134,7 @@ const AdminSchemeType = (props) => {
 export async function getServerSideProps(context) {
   const schemeTypeName = context.params.adminschemetype;
   const json = await myGet(
-    `https://scheme-india-project.vercel.app/api/admin-scheme-type?adminschemetype=${schemeTypeName}`,
+    `http://localhost:3000/api/admin-scheme-type?adminschemetype=${schemeTypeName}`,
     context
   );
 

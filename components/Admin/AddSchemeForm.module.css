@@ -74,3 +74,34 @@
   overflow: hidden;
   outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .longFields {
+    height: 60%;
+    /* background-color: lightblue; */
+    flex-direction: column;
+  }
+
+  .details_section {
+    min-height: 50vh;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .eligibility_section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    min-height: 30vh;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .add_btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+}

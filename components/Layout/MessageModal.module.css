@@ -31,3 +31,10 @@
   animation-name: slideIn;
   animation-duration: 1.5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .message_modal {
+    min-width: 80%;
+    max-width: 80%;
+  }
+}

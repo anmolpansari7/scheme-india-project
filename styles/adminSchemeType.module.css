@@ -54,3 +54,24 @@
 .log_out {
   right: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    /* background-color: rgb(100, 0, 100); */
+    padding: 20px;
+  }
+
+  .admin_schem_type_card_list {
+    margin-top: 40px;
+  }
+
+  .go_back,
+  .log_out {
+    color: #1f0062;
+    right: 25%;
+  }
+
+  .log_out {
+    right: 5%;
+  }
+}

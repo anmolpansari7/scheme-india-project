@@ -35,3 +35,17 @@
   font-size: 1.4rem;
   font-weight: 100;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: unset;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .card_bottom {
+    padding: 12px;
+    width: 100%;
+  }
+}

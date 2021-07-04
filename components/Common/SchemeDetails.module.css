@@ -41,3 +41,33 @@
 .scheme_details_page img {
   max-height: 70px;
 }
+
+@media only screen and (max-width: 600px) {
+  .scheme_details_page {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .scheme_details_page h2 {
+    margin-top: 10px;
+  }
+
+  .left_content {
+    height: fit-content;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    overflow-y: unset;
+  }
+
+  .right_card {
+    width: 100%;
+  }
+
+  .scheme_details_page hr {
+    height: 4px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+}

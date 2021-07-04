@@ -16,3 +16,17 @@
   justify-content: space-evenly;
   margin-bottom: 90px;
 }
+
+@media only screen and (max-width: 600px) {
+  .admin_category_page {
+    height: fit-content;
+    padding: 20px;
+
+    /* background-color: rgb(78, 249, 255); */
+  }
+
+  .admin_category_card_list {
+    /* background-color: teal; */
+    flex-direction: column;
+  }
+}

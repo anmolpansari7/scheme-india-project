@@ -30,7 +30,11 @@ const Users = () => {
           content="scheme India, government schemes, government schemes for me, government schemes in India, government scheme, schemes in india, schemes, health schemes in India, education schemes in India, startup shemes in India, health schemes, education schemes, startup schemes, government health schemes India, government education schemes India, government startup shemes India, scholarship schemes."
         />
       </Head>
-      <NextButton onClick={previousPageHandler} image={previousBtn} />
+      <NextButton
+        onClick={previousPageHandler}
+        image={previousBtn}
+        type="mobile_previous_button"
+      />
       <div className={styles.user_page_content}>
         <p>We currently have only 3 categories.</p>
         <Categories />
@@ -39,7 +43,11 @@ const Users = () => {
           Click next arrow and we will try to find the right scheme for you.
         </p>
       </div>
-      <NextButton onClick={nextPageHandler} image={nextBtn} />
+      <NextButton
+        onClick={nextPageHandler}
+        image={nextBtn}
+        type="mobile_next_button"
+      />
     </div>
   );
 };
