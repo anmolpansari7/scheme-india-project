@@ -16,7 +16,7 @@ async function myGet(url, context) {
 
   if (response.status === 401 && context.req) {
     context.res.writeHead(302, {
-      Location: "http://localhost:3000/admin",
+      Location: "https://scheme-india-project.vercel.app/admin",
     });
     context.res.end();
     return;
